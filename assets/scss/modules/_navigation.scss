@@ -1,0 +1,42 @@
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+        text-align: center;
+        & a {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    }
+    &__right {
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-item {
+        & a {
+            padding: 0 20px;
+            font-weight: 700;
+            transition: 500ms;
+            padding-bottom: 30px;
+            &:hover {
+                transition: 500ms;
+                color: $green !important;
+            }
+        }
+    }
+}

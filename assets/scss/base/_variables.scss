@@ -31,10 +31,27 @@ $grey: #e9ecef;
     &-title {
         font-size: 36px;
         margin-bottom: 20px;
+        text-transform: capitalize;
     }
     &-description {
         line-height: 1.5;
         letter-spacing: 1px;
         font-size: 16px;
+    }
+}
+.btn {
+    padding: 15px 20px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: 300ms;
+    &:hover {
+        background-color: $green;
+        color: white;
+        border: 1px solid $green;
+        // border: none;
+        transition: 300ms;
     }
 }

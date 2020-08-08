@@ -43,11 +43,26 @@ ul {
   margin: 65px auto; }
   .content-title {
     font-size: 36px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-transform: capitalize; }
   .content-description {
     line-height: 1.5;
     letter-spacing: 1px;
     font-size: 16px; }
+
+.btn {
+  padding: 15px 20px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: 300ms; }
+  .btn:hover {
+    background-color: #35a22c;
+    color: white;
+    border: 1px solid #35a22c;
+    transition: 300ms; }
 
 .header {
   height: 100px;
@@ -163,5 +178,65 @@ ul {
         font-size: 20px;
         font-weight: 800;
         margin-bottom: 15px; }
+
+.portfolio__filter__list {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px; }
+  .portfolio__filter__list-item {
+    display: inline-block;
+    color: black;
+    margin: 0 10px; }
+.portfolio__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 240px;
+  margin-bottom: 100px;
+  gap: 30px; }
+  .portfolio__grid__item {
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px; }
+    .portfolio__grid__item-img {
+      width: 100%;
+      border-radius: 4px;
+      height: 100%; }
+    .portfolio__grid__item__detail {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      flex-direction: column;
+      background-color: rgba(53, 162, 44, 0.6);
+      opacity: 0;
+      transition: 800ms; }
+      .portfolio__grid__item__detail:hover {
+        transition: 800ms;
+        opacity: 1; }
+
+.timeline {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  padding-top: 80px; }
+  .timeline__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; }
+    .timeline__grid__item-title {
+      font-size: 36px;
+      margin-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */

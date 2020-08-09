@@ -359,6 +359,7 @@ footer {
   margin: 50px auto 30px;
   width: 40%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center; }
   .social-item {
     width: 30px;
@@ -371,7 +372,8 @@ footer {
     color: #ccc;
     border: 1px #ccc solid;
     margin-right: 20px;
-    transition: 0.3s; }
+    transition: 0.3s;
+    margin-bottom: 8px; }
     .social-item:hover {
       border: 1px #35a22c solid;
       transition: 0.3s;

@@ -150,6 +150,7 @@ ul {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/1.jpg");
   height: 100vh;
+  min-height: 600px;
   background-size: cover;
   background-repeat: no-repeat; }
   .masterhead__container {

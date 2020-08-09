@@ -26,6 +26,10 @@
             margin-bottom: 25px;
             color: white;
             font-size: 35px;
+            @media only screen and (max-width:768px) {
+            font-size: 28px;
+                
+            }
         }
         & .profession{
             font-size: 20px;

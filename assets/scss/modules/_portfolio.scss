@@ -1,13 +1,13 @@
 .portfolio {
     &__filter {
-       display: flex;
-       max-width: 1000px;
-       width: 60%;
-       flex-wrap: wrap;
-       margin: auto;
-       margin-bottom: 60px;
-       justify-content: space-evenly;
-        &-item{
+        display: flex;
+        max-width: 1000px;
+        width: 60%;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-bottom: 60px;
+        justify-content: center;
+        &-item {
             margin-right: 10px;
             margin-bottom: 10px;
         }
@@ -49,13 +49,11 @@
                 }
             }
         }
-        @media only screen and (max-width:1000px) {
-            grid-template-columns: repeat(2,1fr);
-            
+        @media only screen and (max-width: 1000px) {
+            grid-template-columns: repeat(2, 1fr);
         }
-        @media only screen and (max-width:450px) {
-            grid-template-columns: repeat(1,1fr);
-
+        @media only screen and (max-width: 450px) {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

@@ -1,14 +1,38 @@
 $green: #35a22c;
 $blue: #0ea8cf;
 $grey: #e9ecef;
-
 .container {
     width: 80%;
     max-width: 1160px;
     margin: auto;
-    @media only screen and (max-width:425px) {
-        width: 90%;        
+    @media only screen and (max-width: 425px) {
+        width: 90%;
     }
+    &_95 {
+        width: 95%;
+    }
+}
+.btn-sidebar > .toggle_sidebar{
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    transition:ease-in 0.3s ;
+    &:hover {
+        transition:ease-in 0.3s ;
+        background-color: rgba(#fff, 0.4);
+    }
+}
+
+.toggle_sidebar {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
 }
 
 .progress {
@@ -42,11 +66,10 @@ $grey: #e9ecef;
         letter-spacing: 1px;
         font-size: 16px;
     }
-    @media only screen and (max-width:768px) {
+    @media only screen and (max-width: 768px) {
         width: 90%;
-        
     }
-    @media only screen and (max-width:425px) {
+    @media only screen and (max-width: 425px) {
         width: 100%;
     }
 }

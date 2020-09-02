@@ -8,8 +8,8 @@
     justify-content: center;
     transition: 0.3s;
     &-dark {
-        background-color: rgba(#222222, 1);
         height: 60px;
+        background-color: rgba(#222222, 1);
     }
 }
 .fixed-nav {
@@ -35,8 +35,30 @@
                 font-size: 20px;
             }
         }
+        &_admin{
+            display: flex;
+            align-items: center;
+        }
     }
     &__right {
+        &_admin {
+            display: flex;
+            align-items: center;
+            // width:    50px;  
+            justify-content: center;
+            &-item{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                width: 30px;
+                height: 30px;
+                &:hover{
+                    background-color:rgba(#fff, 0.5);
+                    border-radius:5px;
+                    
+                }
+            }
+        }
         &.toggle {
             height: 250px;
             transition: 0.3s;

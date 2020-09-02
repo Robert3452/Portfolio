@@ -1,0 +1,1008 @@
+/* line 1, assets/scss/base/_base.scss */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0; }
+
+/* line 7, assets/scss/base/_base.scss */
+html {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth; }
+
+/* line 13, assets/scss/base/_base.scss */
+a,
+a:active,
+a:link {
+  text-decoration: none;
+  color: white; }
+
+/* line 20, assets/scss/base/_base.scss */
+ul {
+  list-style: none; }
+
+/* line 6, assets/scss/base/_variables.scss */
+.container {
+  width: 80%;
+  max-width: 1160px;
+  margin: auto; }
+  @media only screen and (max-width: 425px) {
+    /* line 6, assets/scss/base/_variables.scss */
+    .container {
+      width: 90%; } }
+  /* line 13, assets/scss/base/_variables.scss */
+  .container_95 {
+    width: 95%; }
+
+/* line 17, assets/scss/base/_variables.scss */
+.avatar {
+  border-radius: 50%;
+  width: 40px; }
+
+/* line 21, assets/scss/base/_variables.scss */
+.menu-admin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px; }
+
+/* line 28, assets/scss/base/_variables.scss */
+.btn-sidebar > .toggle_sidebar {
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  transition: ease-in 0.3s; }
+  /* line 38, assets/scss/base/_variables.scss */
+  .btn-sidebar > .toggle_sidebar:hover {
+    transition: ease-in 0.3s;
+    background-color: rgba(255, 255, 255, 0.4); }
+
+/* line 44, assets/scss/base/_variables.scss */
+.toggle_sidebar {
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 15px; }
+
+/* line 51, assets/scss/base/_variables.scss */
+.progress {
+  width: 100%;
+  height: 4px;
+  background: #e9ecef;
+  border-radius: 5px;
+  position: relative; }
+  /* line 57, assets/scss/base/_variables.scss */
+  .progress-bar {
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    background: linear-gradient(to right, #35a22c, #0ea8cf); }
+
+/* line 67, assets/scss/base/_variables.scss */
+.content {
+  text-align: center;
+  max-width: 770px;
+  width: 70%;
+  margin: 65px auto; }
+  /* line 72, assets/scss/base/_variables.scss */
+  .content-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: capitalize; }
+  /* line 77, assets/scss/base/_variables.scss */
+  .content-description {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 16px; }
+  @media only screen and (max-width: 768px) {
+    /* line 67, assets/scss/base/_variables.scss */
+    .content {
+      width: 90%; } }
+  @media only screen and (max-width: 425px) {
+    /* line 67, assets/scss/base/_variables.scss */
+    .content {
+      width: 100%; } }
+
+/* line 90, assets/scss/base/_variables.scss */
+.btn-menu {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  display: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px; }
+  /* line 98, assets/scss/base/_variables.scss */
+  .btn-menu:hover, .btn-menu:focus {
+    border: 1px solid #0ea8cf;
+    background-color: #0ea8cf; }
+  @media only screen and (max-width: 768px) {
+    /* line 105, assets/scss/base/_variables.scss */
+    .btn-menu {
+      display: inline-block; } }
+
+/* line 111, assets/scss/base/_variables.scss */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+  transition: 300ms; }
+  /* line 122, assets/scss/base/_variables.scss */
+  .btn-block {
+    width: 100%; }
+  /* line 125, assets/scss/base/_variables.scss */
+  .btn:hover {
+    background-color: #35a22c;
+    color: white;
+    border: 1px solid #35a22c;
+    transition: 300ms; }
+  /* line 133, assets/scss/base/_variables.scss */
+  .btn-primary {
+    background-color: #35a22c;
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+    transition: 500ms;
+    border: 1px solid #35a22c; }
+    /* line 143, assets/scss/base/_variables.scss */
+    .btn-primary:focus {
+      transition: 500ms;
+      background-color: #0ea8cf;
+      border: 1px solid #0ea8cf; }
+    /* line 148, assets/scss/base/_variables.scss */
+    .btn-primary:hover {
+      border: 1px solid #0ea8cf;
+      background-color: #0ea8cf; }
+
+/* line 154, assets/scss/base/_variables.scss */
+.node {
+  margin-bottom: 15px; }
+  /* line 156, assets/scss/base/_variables.scss */
+  .node-date {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 5px 9px;
+    border: 3px solid #35a22c; }
+  /* line 162, assets/scss/base/_variables.scss */
+  .node-title {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  /* line 166, assets/scss/base/_variables.scss */
+  .node-description {
+    margin-bottom: 20px; }
+
+/* line 172, assets/scss/base/_variables.scss */
+.input-slide {
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s; }
+  /* line 183, assets/scss/base/_variables.scss */
+  .input-slide:focus {
+    outline: none;
+    border: none; }
+  /* line 187, assets/scss/base/_variables.scss */
+  .input-slide::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background-color: #35a22c;
+    /* color: puntito */ }
+  /* line 196, assets/scss/base/_variables.scss */
+  .input-slide::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    background-color: #35a22c;
+    /* color: puntito */
+    opacity: 0.7; }
+
+/* line 206, assets/scss/base/_variables.scss */
+.card {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.08); }
+
+/* line 214, assets/scss/base/_variables.scss */
+.mt-10 {
+  margin-top: 10px; }
+
+/* line 217, assets/scss/base/_variables.scss */
+.mt-20 {
+  margin-top: 20px; }
+
+/* line 220, assets/scss/base/_variables.scss */
+.mt-30 {
+  margin-top: 30px; }
+
+/* line 223, assets/scss/base/_variables.scss */
+.mt-40 {
+  margin-top: 40px; }
+
+/* line 228, assets/scss/base/_variables.scss */
+.mb-10 {
+  margin-bottom: 10px; }
+
+/* line 231, assets/scss/base/_variables.scss */
+.mb-20 {
+  margin-bottom: 20px; }
+
+/* line 234, assets/scss/base/_variables.scss */
+.mb-30 {
+  margin-bottom: 30px; }
+
+/* line 237, assets/scss/base/_variables.scss */
+.mb-40 {
+  margin-bottom: 40px; }
+
+/* line 242, assets/scss/base/_variables.scss */
+.mr-10 {
+  margin-right: 10px; }
+
+/* line 245, assets/scss/base/_variables.scss */
+.mr-20 {
+  margin-right: 20px; }
+
+/* line 248, assets/scss/base/_variables.scss */
+.mr-30 {
+  margin-right: 30px; }
+
+/* line 251, assets/scss/base/_variables.scss */
+.mr-40 {
+  margin-right: 40px; }
+
+/* line 256, assets/scss/base/_variables.scss */
+.ml-10 {
+  margin-left: 10px; }
+
+/* line 259, assets/scss/base/_variables.scss */
+.ml-20 {
+  margin-left: 20px; }
+
+/* line 262, assets/scss/base/_variables.scss */
+.ml-30 {
+  margin-left: 30px; }
+
+/* line 265, assets/scss/base/_variables.scss */
+.ml-40 {
+  margin-left: 40px; }
+
+/* line 270, assets/scss/base/_variables.scss */
+.m-10 {
+  margin: 10px; }
+
+/* line 273, assets/scss/base/_variables.scss */
+.m-20 {
+  margin: 20px; }
+
+/* line 276, assets/scss/base/_variables.scss */
+.m-30 {
+  margin: 30px; }
+
+/* line 279, assets/scss/base/_variables.scss */
+.m-40 {
+  margin: 40px; }
+
+/* line 283, assets/scss/base/_variables.scss */
+.row {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr); }
+  @media only screen and (max-width: 1024px) {
+    /* line 283, assets/scss/base/_variables.scss */
+    .row {
+      grid-template-columns: repeat(8, 1fr); } }
+  @media only screen and (max-width: 425px) {
+    /* line 283, assets/scss/base/_variables.scss */
+    .row {
+      grid-template-columns: repeat(4, 1fr); } }
+  /* line 297, assets/scss/base/_variables.scss */
+  .row-gap10 {
+    gap: 10px; }
+  /* line 300, assets/scss/base/_variables.scss */
+  .row-gap20 {
+    gap: 20px; }
+  /* line 303, assets/scss/base/_variables.scss */
+  .row-gap30 {
+    gap: 30px; }
+  /* line 306, assets/scss/base/_variables.scss */
+  .row-gap40 {
+    gap: 40px; }
+
+/* line 312, assets/scss/base/_variables.scss */
+.col-1 {
+  grid-column: span 1; }
+
+/* line 315, assets/scss/base/_variables.scss */
+.col-2 {
+  grid-column: span 2; }
+
+/* line 318, assets/scss/base/_variables.scss */
+.col-3 {
+  grid-column: span 3; }
+
+/* line 321, assets/scss/base/_variables.scss */
+.col-4 {
+  grid-column: span 4; }
+
+/* line 324, assets/scss/base/_variables.scss */
+.col-5 {
+  grid-column: span 5; }
+
+/* line 328, assets/scss/base/_variables.scss */
+.col-6 {
+  grid-column: span 6; }
+
+/* line 331, assets/scss/base/_variables.scss */
+.col-7 {
+  grid-column: span 7; }
+
+/* line 335, assets/scss/base/_variables.scss */
+.col-8 {
+  grid-column: span 8; }
+
+/* line 338, assets/scss/base/_variables.scss */
+.col-9 {
+  grid-column: span 9; }
+
+/* line 341, assets/scss/base/_variables.scss */
+.col-10 {
+  grid-column: span 10; }
+
+/* line 344, assets/scss/base/_variables.scss */
+.col-11 {
+  grid-column: span 11; }
+
+/* line 347, assets/scss/base/_variables.scss */
+.col-12 {
+  grid-column: span 12; }
+
+/* line 1, assets/scss/modules/_navigation.scss */
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s; }
+  /* line 10, assets/scss/modules/_navigation.scss */
+  .header-dark {
+    height: 60px;
+    background-color: #222222; }
+
+/* line 15, assets/scss/modules/_navigation.scss */
+.fixed-nav {
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+/* line 20, assets/scss/modules/_navigation.scss */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  /* line 25, assets/scss/modules/_navigation.scss */
+  .navbar__left {
+    text-align: center;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    /* line 31, assets/scss/modules/_navigation.scss */
+    .navbar__left-title {
+      font-size: 30px;
+      font-weight: bolder; }
+      /* line 34, assets/scss/modules/_navigation.scss */
+      .navbar__left-title-small {
+        font-size: 20px; }
+    /* line 38, assets/scss/modules/_navigation.scss */
+    .navbar__left_admin {
+      display: flex;
+      align-items: center; }
+  /* line 44, assets/scss/modules/_navigation.scss */
+  .navbar__right_admin {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    /* line 49, assets/scss/modules/_navigation.scss */
+    .navbar__right_admin-item {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 30px;
+      height: 30px; }
+      /* line 55, assets/scss/modules/_navigation.scss */
+      .navbar__right_admin-item:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px; }
+  /* line 62, assets/scss/modules/_navigation.scss */
+  .navbar__right.toggle {
+    height: 250px;
+    transition: 0.3s; }
+    /* line 65, assets/scss/modules/_navigation.scss */
+    .navbar__right.toggle a {
+      font-size: 12px;
+      display: none; }
+  @media only screen and (max-width: 768px) {
+    /* line 43, assets/scss/modules/_navigation.scss */
+    .navbar__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      height: 0;
+      top: 100%;
+      transition: 0.3s;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: 0.3s; }
+      /* line 83, assets/scss/modules/_navigation.scss */
+      .navbar__right a {
+        font-size: 0;
+        display: none;
+        transition: none !important; }
+      /* line 88, assets/scss/modules/_navigation.scss */
+      .navbar__right.toggle a {
+        font-size: 14px;
+        transition: none;
+        display: inline-block; } }
+
+/* line 97, assets/scss/modules/_navigation.scss */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  /* line 103, assets/scss/modules/_navigation.scss */
+  .menu-item a {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: 700;
+    transition: 500ms;
+    text-transform: capitalize; }
+    /* line 109, assets/scss/modules/_navigation.scss */
+    .menu-item a:hover {
+      transition: 500ms;
+      color: #35a22c !important; }
+    @media only screen and (max-width: 768px) {
+      /* line 103, assets/scss/modules/_navigation.scss */
+      .menu-item a {
+        padding: 20px; } }
+  @media only screen and (max-width: 768px) {
+    /* line 119, assets/scss/modules/_navigation.scss */
+    .menu {
+      flex-direction: column; }
+      /* line 122, assets/scss/modules/_navigation.scss */
+      .menu-item a {
+        padding: 10px; } }
+
+/* line 1, assets/scss/modules/_main.scss */
+.masterhead {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/1.jpg");
+  height: 100vh;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  /* line 9, assets/scss/modules/_main.scss */
+  .masterhead__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100%; }
+    /* line 16, assets/scss/modules/_main.scss */
+    .masterhead__container .avatar {
+      margin-bottom: 20px; }
+      /* line 18, assets/scss/modules/_main.scss */
+      .masterhead__container .avatar img {
+        z-index: 5;
+        border-radius: 100%;
+        border: 5px white solid;
+        object-fit: cover;
+        max-width: 120px; }
+    /* line 26, assets/scss/modules/_main.scss */
+    .masterhead__container .presentation {
+      margin-bottom: 25px;
+      color: white;
+      font-size: 35px; }
+      @media only screen and (max-width: 768px) {
+        /* line 26, assets/scss/modules/_main.scss */
+        .masterhead__container .presentation {
+          font-size: 28px; } }
+    /* line 35, assets/scss/modules/_main.scss */
+    .masterhead__container .profession {
+      font-size: 20px; }
+
+/* line 1, assets/scss/modules/_skills.scss */
+.skills-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 50px; }
+  /* line 7, assets/scss/modules/_skills.scss */
+  .skills-grid-item {
+    height: 80px; }
+    /* line 9, assets/scss/modules/_skills.scss */
+    .skills-grid-item-title {
+      text-transform: capitalize;
+      font-weight: bold;
+      margin-bottom: 10px; }
+  @media only screen and (max-width: 768px) {
+    /* line 16, assets/scss/modules/_skills.scss */
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 425px) {
+    /* line 21, assets/scss/modules/_skills.scss */
+    .skills-grid {
+      grid-template-columns: repeat(1, 1fr); } }
+
+/* line 27, assets/scss/modules/_skills.scss */
+.claims {
+  min-height: 90vh;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  /* line 39, assets/scss/modules/_skills.scss */
+  .claims-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px; }
+    /* line 44, assets/scss/modules/_skills.scss */
+    .claims-grid-item {
+      text-align: center;
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      min-height: 240px;
+      transition: 600ms; }
+      /* line 55, assets/scss/modules/_skills.scss */
+      .claims-grid-item:hover {
+        background-color: black;
+        transition: 600ms; }
+      /* line 59, assets/scss/modules/_skills.scss */
+      .claims-grid-item-title {
+        font-size: 50px;
+        color: #35a22c;
+        display: block;
+        margin-bottom: 20px; }
+      /* line 65, assets/scss/modules/_skills.scss */
+      .claims-grid-item-subtitle {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 15px; }
+    @media only screen and (max-width: 768px) {
+      /* line 39, assets/scss/modules/_skills.scss */
+      .claims-grid {
+        grid-template-columns: repeat(1, 1fr); } }
+
+/* line 2, assets/scss/modules/_portfolio.scss */
+.portfolio__filter {
+  display: flex;
+  max-width: 1000px;
+  width: 60%;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 60px;
+  justify-content: center; }
+  /* line 10, assets/scss/modules/_portfolio.scss */
+  .portfolio__filter-item {
+    margin-right: 10px;
+    margin-bottom: 10px; }
+
+/* line 15, assets/scss/modules/_portfolio.scss */
+.portfolio__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 240px;
+  margin-bottom: 100px;
+  gap: 30px; }
+  /* line 22, assets/scss/modules/_portfolio.scss */
+  .portfolio__grid__item {
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px; }
+    /* line 26, assets/scss/modules/_portfolio.scss */
+    .portfolio__grid__item-img {
+      width: 100%;
+      border-radius: 4px;
+      height: 100%; }
+    /* line 31, assets/scss/modules/_portfolio.scss */
+    .portfolio__grid__item__detail {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      flex-direction: column;
+      background-color: rgba(53, 162, 44, 0.6);
+      opacity: 0;
+      transition: 800ms; }
+      /* line 46, assets/scss/modules/_portfolio.scss */
+      .portfolio__grid__item__detail:hover {
+        transition: 800ms;
+        opacity: 1; }
+  @media only screen and (max-width: 1000px) {
+    /* line 15, assets/scss/modules/_portfolio.scss */
+    .portfolio__grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 450px) {
+    /* line 15, assets/scss/modules/_portfolio.scss */
+    .portfolio__grid {
+      grid-template-columns: repeat(1, 1fr); } }
+
+/* line 1, assets/scss/modules/_timeline.scss */
+.timeline {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 100px; }
+  /* line 9, assets/scss/modules/_timeline.scss */
+  .timeline__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 70px; }
+    /* line 14, assets/scss/modules/_timeline.scss */
+    .timeline__grid__item-title {
+      font-size: 36px;
+      margin-bottom: 40px; }
+    @media only screen and (max-width: 768px) {
+      /* line 9, assets/scss/modules/_timeline.scss */
+      .timeline__grid {
+        grid-template-columns: repeat(1, 1fr); } }
+
+/* line 1, assets/scss/modules/_about.scss */
+.about {
+  padding-bottom: 60px; }
+  /* line 3, assets/scss/modules/_about.scss */
+  .about__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 100px; }
+    /* line 9, assets/scss/modules/_about.scss */
+    .about__grid__item-left {
+      grid-column: span 2; }
+      /* line 11, assets/scss/modules/_about.scss */
+      .about__grid__item-left img {
+        width: 100%;
+        object-fit: cover; }
+    /* line 16, assets/scss/modules/_about.scss */
+    .about__grid__item-right {
+      grid-column: span 3;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      /* line 21, assets/scss/modules/_about.scss */
+      .about__grid__item-right-title {
+        font-size: 35px;
+        line-height: 1;
+        margin-bottom: 35px; }
+      /* line 26, assets/scss/modules/_about.scss */
+      .about__grid__item-right-content {
+        line-height: 1.8;
+        margin-bottom: 40px; }
+      /* line 30, assets/scss/modules/_about.scss */
+      .about__grid__item-right-btn {
+        min-width: 120px;
+        width: 22%;
+        max-width: 200px; }
+    @media only screen and (max-width: 768px) {
+      /* line 37, assets/scss/modules/_about.scss */
+      .about__grid__item-left, .about__grid__item-right {
+        grid-column: span 5; } }
+
+/* line 1, assets/scss/modules/_footer.scss */
+footer {
+  background-color: #222222;
+  text-align: center;
+  color: #ccc; }
+  /* line 5, assets/scss/modules/_footer.scss */
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    /* line 9, assets/scss/modules/_footer.scss */
+    footer .footer hr {
+      color: #ccc; }
+
+/* line 15, assets/scss/modules/_footer.scss */
+.social {
+  max-width: 600px;
+  margin: 50px auto 30px;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  /* line 22, assets/scss/modules/_footer.scss */
+  .social-item {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 50%;
+    color: #ccc;
+    border: 1px #ccc solid;
+    margin-right: 20px;
+    transition: 0.3s;
+    margin-bottom: 8px; }
+    /* line 35, assets/scss/modules/_footer.scss */
+    .social-item:hover {
+      border: 1px #35a22c solid;
+      transition: 0.3s;
+      color: #35a22c; }
+
+/* line 42, assets/scss/modules/_footer.scss */
+.copyright {
+  margin: 30px auto; }
+
+/* line 1, assets/scss/modules/_sidebar.scss */
+.dark_theme {
+  background-color: #222222; }
+
+/* line 4, assets/scss/modules/_sidebar.scss */
+.sidebar {
+  height: 100vh;
+  margin-top: 60px;
+  width: 260px;
+  transform: translateX(-101%);
+  position: fixed;
+  background-color: #222222;
+  transition: 0.3s; }
+  /* line 12, assets/scss/modules/_sidebar.scss */
+  .sidebar_title {
+    color: rgba(255, 255, 255, 0.7); }
+  /* line 15, assets/scss/modules/_sidebar.scss */
+  .sidebar-container {
+    padding-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 21, assets/scss/modules/_sidebar.scss */
+  .sidebar-content {
+    color: white;
+    background-color: #26292e;
+    padding-top: 90px;
+    transition: 0.3s; }
+    /* line 26, assets/scss/modules/_sidebar.scss */
+    .sidebar-content-container {
+      width: 95%;
+      margin: auto; }
+    /* line 30, assets/scss/modules/_sidebar.scss */
+    .sidebar-content-title {
+      font-size: 25px; }
+    /* line 35, assets/scss/modules/_sidebar.scss */
+    .sidebar-content-date span {
+      color: #0ea8cf; }
+  /* line 40, assets/scss/modules/_sidebar.scss */
+  .sidebar-active {
+    padding-left: 260px;
+    transition: 0.3s; }
+
+/* line 46, assets/scss/modules/_sidebar.scss */
+.icon_menu {
+  margin-right: auto;
+  width: 20px; }
+
+/* line 50, assets/scss/modules/_sidebar.scss */
+.list {
+  max-width: 200px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 20px;
+  display: flex;
+  transition: 0.3s;
+  flex-direction: column; }
+  /* line 58, assets/scss/modules/_sidebar.scss */
+  .list_item {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px; }
+    /* line 65, assets/scss/modules/_sidebar.scss */
+    .list_item:hover {
+      transition: 0.3s;
+      color: #fff;
+      background-color: #35a22c; }
+    /* line 70, assets/scss/modules/_sidebar.scss */
+    .list_item:link {
+      transition: 0.3s;
+      color: #fff;
+      background-color: #35a22c; }
+
+/* line 77, assets/scss/modules/_sidebar.scss */
+.toggle {
+  transform: translateX(0);
+  transition: 0.3s; }
+
+/* line 82, assets/scss/modules/_sidebar.scss */
+.grid {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 240px;
+  gap: 10px; }
+
+/* line 91, assets/scss/modules/_sidebar.scss */
+.item {
+  background-color: tomato; }
+
+/* line 96, assets/scss/modules/_sidebar.scss */
+.presentation {
+  grid-auto-rows: 200px; }
+  /* line 98, assets/scss/modules/_sidebar.scss */
+  .presentation__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); }
+  /* line 102, assets/scss/modules/_sidebar.scss */
+  .presentation__item {
+    grid-column: span 2; }
+    @media only screen and (max-width: 1100px) {
+      /* line 102, assets/scss/modules/_sidebar.scss */
+      .presentation__item {
+        grid-column: span 3; } }
+    @media only screen and (max-width: 600px) {
+      /* line 102, assets/scss/modules/_sidebar.scss */
+      .presentation__item {
+        grid-column: span 6; } }
+  /* line 111, assets/scss/modules/_sidebar.scss */
+  .presentation__card {
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 119, assets/scss/modules/_sidebar.scss */
+    .presentation__card-left {
+      width: 50%; }
+      /* line 122, assets/scss/modules/_sidebar.scss */
+      .presentation__card-left-title {
+        font-size: 15px; }
+    /* line 126, assets/scss/modules/_sidebar.scss */
+    .presentation__card-right {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 50%; }
+      /* line 132, assets/scss/modules/_sidebar.scss */
+      .presentation__card-right img {
+        object-fit: contain;
+        max-width: 100%;
+        height: 100%; }
+    /* line 138, assets/scss/modules/_sidebar.scss */
+    .presentation__card:hover {
+      transition: 0.3s;
+      transform: translatey(-5%); }
+
+/* line 145, assets/scss/modules/_sidebar.scss */
+.overview__card {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  /* line 154, assets/scss/modules/_sidebar.scss */
+  .overview__card .icon {
+    font-size: 20px;
+    color: #0ea8cf; }
+  /* line 158, assets/scss/modules/_sidebar.scss */
+  .overview__card:hover {
+    transition: 0.3s;
+    transform: translatey(-5%); }
+
+/* line 164, assets/scss/modules/_sidebar.scss */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  /* line 169, assets/scss/modules/_sidebar.scss */
+  .form__group h5 {
+    margin-bottom: 10px;
+    font-size: 20px; }
+  /* line 173, assets/scss/modules/_sidebar.scss */
+  .form__group-input {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px; }
+    /* line 182, assets/scss/modules/_sidebar.scss */
+    .form__group-input:focus {
+      transition: 0.3s;
+      border: 1px solid #35a22c; }
+
+/* line 1, assets/scss/modules/_manage_skills.scss */
+.crud_wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px; }
+  /* line 7, assets/scss/modules/_manage_skills.scss */
+  .crud_wrapper_form {
+    grid-column: span 2; }
+    @media only screen and (max-width: 768px) {
+      /* line 7, assets/scss/modules/_manage_skills.scss */
+      .crud_wrapper_form {
+        grid-column: span 6; } }
+  /* line 13, assets/scss/modules/_manage_skills.scss */
+  .crud_wrapper_view {
+    overflow: auto;
+    gap: 20px;
+    grid-column: span 4;
+    grid-row: span 6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-rows: 1fr; }
+    @media only screen and (max-width: 768px) {
+      /* line 13, assets/scss/modules/_manage_skills.scss */
+      .crud_wrapper_view {
+        grid-column: span 6; } }
+    /* line 25, assets/scss/modules/_manage_skills.scss */
+    .crud_wrapper_view_item {
+      grid-row: span 1; }
+      @media only screen and (max-width: 428px) {
+        /* line 25, assets/scss/modules/_manage_skills.scss */
+        .crud_wrapper_view_item {
+          grid-column: span 2; } }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <!-- Google web fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
@@ -13,39 +13,229 @@
     <title>Dashboard - Admin</title>
 </head>
 
-<body>
+<body class="dark_theme">
     <section class="header header-dark">
         <nav class="navbar   container_95">
-            <div class="navbar__left">
-                <div class="btn-sidebar" >
+            <div class="navbar__left_admin">
+                <div class="btn-sidebar">
                     <i class="toggle_sidebar fas fa-bars"></i>
                 </div>
-                <a href="/" class="navbar__left-title-small">Portfolio Admin</a>
+                <a href="/" class="navbar__left-title-small">Dashboard</a>
             </div>
-            <div class="navbar__right">
-                <ul class="menu">
-                    <li class="menu-item"><a href="#">Home</a></li>
-                    <li class="menu-item"><a href="#skills">Skills</a></li>
-                    <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
-                    <li class="menu-item"><a href="#timeline">timeline</a></li>
-                    <li class="menu-item"><a href="#about">About</a></li>
+            <div class="navbar__right_admin">
+                <ul class="menu-admin">
+                    <li class="navbar__right_admin-item">
+                        <a href=""><img class="icon_menu" src="./assets/img/dashboard.svg"></a>
+                    </li>
+                    <li class="navbar__right_admin">
+                        <a href=""><img class="avatar" src="./assets/img/Me.jpg" /></a>
+                    </li>
                 </ul>
-            </div>
-            <div class="btn-menu">
-                <i class="fas fa-bars"></i>
+
             </div>
         </nav>
     </section>
-    <nav class="sidebar ">
-            
+    <nav class="sidebar toggle ">
+        <div class="sidebar-container">
+            <h4 class="sidebar_title">Dashboard</h4>
+            <div class="list">
+                <a href="#">
+                    <div class="list_item">
+                        Access
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="list_item">
+                        Profile
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="list_item">
+                        Skills
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="list_item">
+                        Claims
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="list_item">
+                        Portfolio
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="list_item">
+                        Timeline
+                    </div>
+                </a>
+            </div>
+            <h4 class="sidebar_title">Chat </h4>
+            <div class="list">
+                <a href="#">
+                    <div class="list_item">
+                        Signin
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="list_item">
+                        Signup
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="list_item">
+                        My chat
+                    </div>
+                </a>
+            </div>
+        </div>
     </nav>
-    <div class="sidebar-content ">
-        <div class="grid">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+    <div class="sidebar-content sidebar-active">
+        <div class="sidebar-content-container">
+
+            <!-- PRESENTATION AREA -->
+            <!-- <div class="row">
+                <div class="card col-3">
+                    <h4 class="sidebar-content-title">
+                        Dashboard
+                    </h4>
+                    <div class="sidebar-content-date">
+                        <span>Friday</span> · September 20, 2020 · 12:16 PM
+                    </div>
+                </div>
+            </div>
+            <div class="presentation presentation__wrapper row row-gap30 mt-30 mb-30">
+                <div class="presentation__card card presentation__item">
+                    <div class="presentation__card-left">
+                        <div class="presentation__card-left-title">
+                            <h4>Manage my portfolio</h4>
+                        </div>
+                        <div class="presentation__card-left-body">
+                            Create, Update, Delete and View all the posts and the contents that are in my app
+                        </div>
+                    </div>
+                    <div class="presentation__card-right">
+                        <img src="./assets/img/processing-pana.svg" alt="" />
+                    </div>
+                </div>
+                <div class="presentation__card card presentation__item">
+                    <div class="presentation__card-left">
+                        <div class="presentation__card-left-title">
+                            <h4>Enjoy my app</h4>
+                        </div>
+                        <div class="presentation__card-left-body">
+                            Explore and search the things you would like
+                        </div>
+                    </div>
+                    <div class="presentation__card-right">
+                        <img src="./assets/img/browser-stats-pana.svg" alt="" />
+
+                    </div>
+                </div>
+                <div class="presentation__card card presentation__item">
+                    <div class="presentation__card-left">
+                        <div class="presentation__card-left-title">
+                            <h4>Watch all in this MERN Stack app</h4>
+                        </div>
+                        <div class="presentation__card-left-body">
+                            Some features are will enabled when you're registered as an admin
+                        </div>
+                    </div>
+                    <div class="presentation__card-right">
+                        <img src="./assets/img/windows-pana.svg" alt="" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="overview row row-gap30 mt-30 mb-30">
+                <div class="overview__card card col-2">
+                    <div class="overview__card-left">
+                        <h5>Page Views</h5>
+                        <span>34</span>
+                    </div>
+                    <div class="overview__card-right">
+                        <i class="icon far fa-eye"></i>
+                    </div>
+                </div>
+                <div class="overview__card card col-2">
+                    <div class="overview__card-left">
+                        <h5>Clics on Contact</h5>
+                        <span>4</span>
+                    </div>
+                    <div class="overview__card-right">
+                        <i class="icon fas fa-sign-in-alt"></i>
+                    </div>
+                </div>
+                <div class="overview__card card col-2">
+                    <div class="overview__card-left">
+                        <h5>Clics on My Cv</h5>
+                        <span>12</span>
+                    </div>
+                    <div class="overview__card-right">
+                        <i class="icon fas fa-hand-pointer"></i>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- SKILLS AREA -->
+
+            <div class="row">
+                <div class="card col-3">
+                    <h4 class="sidebar-content-title">
+                        Your skills
+                    </h4>
+                    <div class="sidebar-content-date">
+                        <span>Friday</span> · September 20, 2020 · 12:16 PM
+                    </div>
+                </div>
+            </div>
+            <div class="crud_wrapper">
+                <div class="card crud_wrapper_form col-4 mt-30">
+                    <h3 class="mb-10">Add your skills</h3>
+                    <!-- <form class="form">
+                        <div class="form__group">
+                            <h5>Title skill</h5>
+                            <input placeholder="Example: Typescript" class="form__group-input" type="text" name=""
+                                id="">
+                        </div>
+                        <div class="form__group">
+                            <h5>Percentage skill</h5>
+                            <input class=" input-slide" type="range" min="1" max="100" value="50" />
+                        </div>
+                        <div class="form__group mt-10">
+                            <button type="submit" class="btn btn-primary ">
+                                Add Skill
+                            </button>
+                        </div>
+                    </form> -->
+
+                    <form action="" class="form">
+                        <div class="form__group">
+                            <h5>Title Claims</h5>
+                            <input type="text" class="form__group-input" placeholder="Example: Programming">
+                        </div>
+                        <div class="form__group">
+                            <h5>Content skill</h5>
+                            <textarea name="content" placeholder="Insert the content of the claim"
+                                class="form__group-input" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form__group mt-10">
+                            <button type="submit" class="btn btn-primary ">
+                                Add Claim
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="crud_wrapper_view mt-30">
+                    <div class="crud_wrapper_view_item card">
+                        <span>hola</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
 <script src="./assets/js/sidebar.js"></script>
+
 </html>

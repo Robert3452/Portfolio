@@ -6,3 +6,4 @@ btn_sidebar.addEventListener('click', () => {
     sidebarBody.classList.toggle("sidebar-active");
     sidebar.classList.toggle("toggle")
 })
+    
